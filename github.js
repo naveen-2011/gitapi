@@ -1,5 +1,5 @@
 function fetchDetails(){
-    const username=document.getElementById("username").value;
+    const username=document.getElementById("uname").value;
     const url=`https://api.github.com/users/${username}/repos`
     fetch(url).then((response)=>{return response.json()}).then(data=>{
          fetchdata(data);
